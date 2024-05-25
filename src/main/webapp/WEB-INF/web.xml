@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    id="WebApp_ID" version="3.0">
+    <display-name>WebProject</display-name>
+    <servlet>
+        <servlet-name>helloServlet</servlet-name>
+        <servlet-class>com.example.demo.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>list</servlet-name>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>helloServlet</servlet-name>
+    <url-pattern>/hello-servlet</url-pattern>
+</servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>show</servlet-name>
+    <url-pattern>/show</url-pattern>
+</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>update</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>detail</servlet-name>
+        <url-pattern>/detail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>prec</servlet-name>
+        <url-pattern>/prec</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>helloServlet</servlet-name>
+        <url-pattern>/minute</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>list</servlet-name>
+        <jsp-file>/JSTable/sharelist.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>show</servlet-name>
+        <jsp-file>/webhqchart.demo/demo/myshare.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>update</servlet-name>
+        <jsp-file>/webhqchart.demo/demo/myshare.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>detail</servlet-name>
+        <jsp-file>/detail/hello2.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>prec</servlet-name>
+        <jsp-file>/detail/hello1.jsp</jsp-file>
+    </servlet>
+</web-app>
